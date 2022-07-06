@@ -1,0 +1,3 @@
+= Project description
+
+Simple monitoring solution that uses `spring boot actuator` to collect metrics.
