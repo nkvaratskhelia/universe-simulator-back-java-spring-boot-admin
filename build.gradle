@@ -2,9 +2,9 @@ plugins {
     id 'java'
     id 'idea'
     id 'io.spring.dependency-management' version '1.1.0'
-    id 'org.springframework.boot' version '2.7.5'
-    id 'org.sonarqube' version '3.3'
-    id 'org.owasp.dependencycheck' version '7.3.2'
+    id 'org.springframework.boot' version '3.0.2'
+    id 'org.sonarqube' version '3.5.0.2730'
+    id 'org.owasp.dependencycheck' version '8.0.1'
 }
 
 group = 'com.example.universe.simulator'
@@ -57,14 +57,14 @@ repositories {
 }
 
 ext {
-    set('commonVersion', '1.7.1')
+    set('commonVersion', '1.8.3')
     set('logstashLogbackEncoderVersion', '7.2')
 }
 
 dependencyManagement {
     imports {
-        mavenBom 'org.springframework.cloud:spring-cloud-dependencies:2021.0.5'
-        mavenBom 'de.codecentric:spring-boot-admin-dependencies:2.7.7'
+        mavenBom 'org.springframework.cloud:spring-cloud-dependencies:2022.0.0'
+        mavenBom 'de.codecentric:spring-boot-admin-dependencies:3.0.0'
     }
 }
 
@@ -72,7 +72,6 @@ dependencies {
     implementation "com.example.universe.simulator:common:${commonVersion}"
     implementation 'de.codecentric:spring-boot-admin-starter-server'
     runtimeOnly 'org.springframework.cloud:spring-cloud-starter-consul-config'
-    runtimeOnly 'org.springframework.cloud:spring-cloud-starter-sleuth'
     // needed for spring cloud load balancer
     runtimeOnly 'com.github.ben-manes.caffeine:caffeine'
     runtimeOnly "net.logstash.logback:logstash-logback-encoder:${logstashLogbackEncoderVersion}"
