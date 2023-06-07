@@ -28,7 +28,7 @@ repositories {
 }
 
 ext {
-    set('commonVersion', '2.1.4')
+    set('commonVersion', '2.2.2')
     set('logstashLogbackEncoderVersion', '7.3')
 }
 
