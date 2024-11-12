@@ -33,7 +33,7 @@ repositories {
 }
 
 ext {
-    set('commonVersion', '3.0.7')
+    set('commonVersion', '3.1.0')
     set('logstashLogbackEncoderVersion', '8.0')
 }
 
