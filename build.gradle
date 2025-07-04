@@ -46,7 +46,7 @@ ext {
 dependencyManagement {
     imports {
         mavenBom 'org.springframework.cloud:spring-cloud-dependencies:2025.0.0'
-        mavenBom 'de.codecentric:spring-boot-admin-dependencies:3.5.0'
+        mavenBom 'de.codecentric:spring-boot-admin-dependencies:3.5.1'
     }
 }
 
